@@ -37,7 +37,7 @@ export default function Home({ pokemon }) {
                   height="200px"
                   width="215px"
                   effect="blur"
-                  placeholderSrc={`https://ssr-pokemon-dev.s3.amazonaws.com/${pokemon.image}`}
+                  placeholderSrc={`LNO;A3xu?GR;tTD*M|9a~VRjIqIW`}
                 />
                 <h3>{pokemon.name}</h3>
               </a>
