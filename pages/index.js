@@ -39,7 +39,7 @@ export default function Home({ pokemon }) {
                   effect="blur"
                   placeholderSrc={`LNO;A3xu?GR;tTD*M|9a~VRjIqIW`}
                 />
-                <h3>{pokemon.name}</h3>
+                <div className={styles.name}>{pokemon.name}</div>
               </a>
             </Link>
           </div>
