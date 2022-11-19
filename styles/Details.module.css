@@ -31,7 +31,7 @@
 }
 
 .imgcontainer {
-  min-width: 400px;
+  min-width: 350px;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -45,5 +45,5 @@
   margin-top: 1.5rem;
   border: 2px solid gray;
   border-radius: 8px;
-  min-width: 400px;
+  min-width: 350px;
 }
