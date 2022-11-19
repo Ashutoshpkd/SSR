@@ -30,3 +30,18 @@
 .card img {
   max-height: 200px;
 }
+
+@media (max-width: 599px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1025px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+}

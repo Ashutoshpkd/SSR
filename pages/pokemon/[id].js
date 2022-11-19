@@ -28,17 +28,19 @@ export default function Details({ pokemon }) {
         </Link>
       </div>
       <div className={styles.layout}>
-        <div>
+        <div className={styles.imgcontainer}>
           <img
             className={styles.picture}
+            height="200px"
+            width="215px"
             src={`https://ssr-pokemon-dev.s3.amazonaws.com/${pokemon.image}`}
             alt={pokemon.name.english}
           />
-        </div>
-        <div>
           <div className={styles.name}>{pokemon.name}</div>
+        </div>
+        <div className={styles.details}>
           <div className={styles.type}>{pokemon.type.join(", ")}</div>
-          <table>
+          <table style={{display: 'block'}}>
             <thead className={styles.header}>
               <tr>
                 <th>Name</th>
