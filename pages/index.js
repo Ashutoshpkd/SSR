@@ -9,7 +9,7 @@ import "react-lazy-load-image-component/src/effects/opacity.css";
 
 export async function getServerSideProps() {
   const resp = await fetch(
-    "https://ssr-pokemon-dev.s3.amazonaws.com/json/index.json"
+    "https://pokemon-dev-2.s3.ap-south-1.amazonaws.com/index.json"
   );
 
   return {
@@ -32,7 +32,7 @@ export default function Home({ pokemon }) {
             <Link href={`/pokemon/${pokemon.id}`}>
               <a>
                 <LazyLoadImage
-                  src={`https://ssr-pokemon-dev.s3.amazonaws.com/${pokemon.image}`}
+                  src={`https://pokemon-dev-2.s3.ap-south-1.amazonaws.com/${pokemon.image}`}
                   alt={pokemon.name}
                   height="200px"
                   width="215px"

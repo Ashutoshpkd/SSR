@@ -6,7 +6,7 @@ import styles from "../../styles/Details.module.css";
 
 export async function getServerSideProps({ params }) {
   const resp = await fetch(
-    `https://ssr-pokemon-dev.s3.amazonaws.com/pokemon/${params.id}.json`
+    `https://pokemon-dev-2.s3.ap-south-1.amazonaws.com/pokemon/${params.id}.json`
   );
 
   return {
@@ -33,7 +33,7 @@ export default function Details({ pokemon }) {
             className={styles.picture}
             height="200px"
             width="215px"
-            src={`https://ssr-pokemon-dev.s3.amazonaws.com/${pokemon.image}`}
+            src={`https://pokemon-dev-2.s3.ap-south-1.amazonaws.com/${pokemon.image}`}
             alt={pokemon.name.english}
           />
           <div className={styles.name}>{pokemon.name}</div>
